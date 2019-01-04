@@ -1,0 +1,59 @@
+{
+  "name": "Xapi",
+  "version": "1.0.1",
+  "description": "A quick start template to kickstart a Node Express Api application using Sequelize ORM, Mocha Cha chai-http as test suites",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js --exec babel-node --presets env",
+    "test": "nyc --reporter=html --reporter=text ./node_modules/mocha/bin/mocha --recursive --require babel-register --exit",
+    "coveralls": "nyc report --reporter=text-lcov | coveralls"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andela-git/senplate.git"
+  },
+  "bin": {
+    "coveralls": "./bin/coveralls.js"
+  },
+  "keywords": [
+    "Express",
+    "application",
+    "bootstrap",
+    "Express",
+    "Sequelize",
+    "ORM",
+    "Node",
+    "Postgres",
+    "Mysql",
+    "Mongo",
+    "Web",
+    "framework"
+  ],
+  "author": "Wale Ayandiran",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andela-git/senplate/issues"
+  },
+  "homepage": "https://github.com/andela-git/senplate#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "morgan": "^1.9.0",
+    "sequelize": "^4.38.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "chai": "^4.1.2",
+    "chai-http": "^4.0.0",
+    "coveralls": "^3.0.2",
+    "mocha": "^5.2.0",
+    "mocha-lcov-reporter": "^1.3.0",
+    "nodemon": "^1.18.3",
+    "nyc": "^12.0.2"
+  }
+}
