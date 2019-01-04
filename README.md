@@ -8,7 +8,7 @@
 A quick start template for bootstrapping a new NODE Express API application using sequelize as the ORM.
 
 ## Quick setup
-* `git clone https://github.com/andela-git/senplate.git`
+* `git clone https://github.com/waleCloud/xapi.git`
 * `cd xapi`
 * `cp .env.example .env` - Listens on PORT 9000 by default.
 * `npm install`
