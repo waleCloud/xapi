@@ -16,7 +16,6 @@ A quick start template for bootstrapping a new NODE Express API application usin
 * `npm start` - Your app should be running on http://localhost:9000/
 
 ### Folder structure
-- `index.js` - Application entry point
 - **app** [dir] - application folder
     -  **config** - `config.js`::sequelize configuration file 
     -  **controllers** - application controllers folder, app logic goes here
@@ -24,9 +23,10 @@ A quick start template for bootstrapping a new NODE Express API application usin
     -  **migrations** - database migration files
     -  **models** - application database models definition goes here
     -  **routes** - application requests, requests format and definition goes
-        -   ***api*** [dir] - api folder to carefully house all your api routes file
-            -   `hello.js` - hello default route (optional)
+        -   to carefully house all your api routes file
+        -   `hello.js` - hello default route (optional)
     -  **seeders** - database seeders folder
+    -  `index.js` - Application entry point
 - **test** [dir]
     - feature [dir]
     - unit [dir]
