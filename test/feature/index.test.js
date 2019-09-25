@@ -1,14 +1,14 @@
 import chai, { expect } from 'chai';
 import chaiHttp from 'chai-http';
 
-import app from '../../index';
+import app from '../../app/index';
 
 chai.use(chaiHttp);
 
 describe('Test Hello endpoint', () => {
   it('should return success:true', (done) => {
     chai.request(app)
-      .get('/api/hello')
+      .get('/api/v1/hello')
       .end((err, res) => {
         expect(err).to.equal(null);
         expect(res.statusCode).to.equal(200);
