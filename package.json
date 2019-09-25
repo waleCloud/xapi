@@ -4,7 +4,9 @@
   "description": "A quick start template to kickstart a Node Express Api application using Sequelize ORM, Mocha Cha chai-http as test suites",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon ./app/index.js --exec babel-node --presets env",
+    "build": "rm -rf ./build && ./node_modules/.bin/babel -d ./build ./app -s --copy-files",
+    "start": "npm run build && node ./build/index.js",
+    "dev": "nodemon ./app/index.js --exec babel-node --presets env",
     "test": "nyc --reporter=html --reporter=text ./node_modules/mocha/bin/mocha --recursive --require babel-register --exit",
     "coveralls": "nyc report --reporter=text-lcov | coveralls"
   },
